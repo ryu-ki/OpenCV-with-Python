@@ -7,7 +7,6 @@ import os,sys
 
 #画像ファイル名
 filename = input("Filename:")
-#保存ファイル名
 
 if not os.path.exists(filename):
     print("Not Found!")
@@ -19,3 +18,8 @@ cv2.imshow(filename,img)
 cv2.imwrite("grayscale.png",img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+"""
+画像の保存:cv2.imwrite()
+・第一引数は画像のファイル名、第二引数は保存したいファイル名
+"""
